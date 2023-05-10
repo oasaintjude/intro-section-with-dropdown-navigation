@@ -46,6 +46,9 @@ nav button:hover {
     border: 2px solid black;
     color: var(--Almost-Black);
 }
+#menu-icon {
+    display: none;
+}
 #logo-and-navigation {
     display: flex;
     align-items: center;
@@ -59,27 +62,28 @@ nav button:hover {
     margin: 0 100px;
     padding: 50px 0px;
 }
-#hero-section img{ 
-    width: 50%;
+.hero-image {
+    background-image: url("images/image-hero-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 45%;
     height: auto;
 }
-
 .make-remote {
     font-family: 'Epilogue', sans-serif;
-    padding-top: 170px;
+    padding-top: 130px;
 }
 .make-remote h1 {
     font-weight: 750;
     font-size: 80px;
-    padding-bottom: 65px;
+    padding-bottom: 40px;
     width: 500px;
 }
 .make-remote p {
     font-size: 20px;
     color: var(--Medium-Gray);
-    /* width: 65%; */
     width: 470px;
-    padding-bottom: 65px;
+    padding-bottom: 40px;
 }
 .make-remote button {
     background-color: var(--Almost-Black);
@@ -101,5 +105,63 @@ nav button:hover {
     align-items: center;
     padding-top: 180px;
 }
+.clients img {
+    padding: 18px;
+}
 
+
+/* RESPONSIVE */
+@media screen and (max-width: 640px) {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 30px;
+        padding: 15px 0;
+    }
+    nav ul {
+        display: none;
+    }
+    #menu-icon {
+        display: block;
+    }
+    
+    /* HERO SECTION */
+    #hero-section {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+    }
+    .hero-image {
+        background-image: url("images/image-hero-mobile.png");
+        height: 300px;
+        width: 100%;
+    }
+    .make-remote {
+        font-family: 'Epilogue', sans-serif;
+        padding-top: 40px;
+        text-align: center;
+    }
+    .make-remote h1 {
+        font-size: 30px;
+        padding-bottom: 30px;
+        font-weight: 750;
+        width: 100%;
+    }
+    .make-remote p {
+        font-size: 18px;
+        color: var(--Medium-Gray);
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .clients {
+        padding-top: 50px;
+        padding-bottom: 90px;
+    }
+    .clients img {
+        padding: 5px;
+        width: 25%;
+    }
+}
 
