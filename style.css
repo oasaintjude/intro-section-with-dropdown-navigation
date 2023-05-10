@@ -111,6 +111,60 @@ nav button:hover {
 
 
 /* RESPONSIVE */
+@media screen and (min-width: 641px) and (max-width: 1000px){
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 30px;
+        padding: 15px 0;
+    }
+    nav ul {
+        display: none;
+    }
+    #menu-icon {
+        display: block;
+    }
+    
+    /* HERO SECTION */
+    #hero-section {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+    }
+    .hero-image {
+        background-image: url("images/image-hero-mobile.png");
+        height: 50vh;
+        width: 100%;
+    }
+    .make-remote {
+        font-family: 'Epilogue', sans-serif;
+        padding-top: 40px;
+        text-align: center;
+    }
+    .make-remote h1 {
+        font-size: 30px;
+        padding-bottom: 30px;
+        font-weight: 750;
+        width: 100%;
+    }
+    .make-remote p {
+        font-size: 18px;
+        color: var(--Medium-Gray);
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .clients {
+        padding-top: 50px;
+        padding-bottom: 90px;
+    }
+    .clients img {
+        padding: 5px;
+        width: 25%;
+    }
+
+}
 @media screen and (max-width: 640px) {
     nav {
         display: flex;
@@ -163,5 +217,5 @@ nav button:hover {
         padding: 5px;
         width: 25%;
     }
-}
 
+}
